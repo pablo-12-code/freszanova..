@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Freszanova</title>
+  <!-- Added Magic App meta tag to ensure recognition -->
+  <meta name="freszanova" content="true">
+  <!-- Added base URL to ensure all relative links use the correct domain -->
+  <base href="https://freszanova.com.co/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Freszanova</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style id="app-style">
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff; /* Already white, no change needed */
+    }
+    
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #000000; /* Changed from #e53e3e to black */
+    }
+    
+    .card {
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .category-title {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .category-title:after {
+      content: '';
+      position: absolute;
+      width: 70%;
+      height: 4px;
+      bottom: -8px;
+      left: 15%;
+      background-color: #000000; 
+      border-radius: 10px;
+    }
+    
+    .btn-primary {
+      background-color: #000000; 
+      color: white;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background-color: #333333; 
+      transform: translateY(-2px);
+    }
+    
+    .btn-outline {
+      border: 2px solid #000000; 
+      color: #000000; 
+      transition: all 0.3s ease;
+    }
+    
+    .btn-outline:hover {
+      background-color: #000000;
+      color: white;
+    }
+    
+    /* For smaller screens */
+    @media (max-width: 640px) {
+      .cart-panel {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header update - correct the logo link URL -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <a href="https://freszanova.com.co/" class="logo text-2xl font-bold">
+          <!-- Replaced text logo with image logo -->
+          <img src="https://i.postimg.cc/2SFZt9DB/30b61640-76cb-4dc4-bea8-212f9e0092d4.jpg" alt="Freszanova Logo" class="w-32 h-auto">
+        </a>
+      </div>
+      <!-- Removed cart button and related elements -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Hero Banner -->
+    <div class="bg-white rounded-xl shadow-lg p-6 mb-8 text-black flex flex-col md:flex-row items-center">
+      <div class="md:w-2/3 mb-4 md:mb-0">
+        <!-- Replace text "Freszanova" with logo image -->
+        <div class="mb-2">
+          <img src="https://i.postimg.cc/2SFZt9DB/30b61640-76cb-4dc4-bea8-212f9e0092d4.jpg" alt="Freszanova Logo" class="w-48 h-auto mb-2">
+        </div>
+        <!-- Modified text here: changed "fresas" to "frutas" -->
+        <p class="text-lg opacity-90">Disfruta de los mejores productos de FRESZANOVA.</p>
+        
+        <!-- Modified contact buttons with black text and border -->
+        <div class="mt-6">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4">
+              <a href="https://wa.me/+573202202211" target="_blank" class="bg-white border-2 border-black text-black hover:bg-black hover:text-white py-3 px-6 rounded-lg font-medium text-center flex items-center justify-center transition duration-300" style="color: #000000;">
+                <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                Realiza tu pedido por medio de WhatsApp
+              </a>
+              <a href="https://www.instagram.com/freszanovahelados?igsh=MWhqNXhvOWlqeWw3ZA==" target="_blank" class="bg-white border-2 border-black text-black hover:bg-black hover:text-white py-3 px-6 rounded-lg font-medium text-center flex items-center justify-center transition duration-300" style="color: #000000;">
+                <i class="fab fa-instagram mr-2 text-xl"></i>
+                También nos puedes visitar en nuestro Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="md:w-1/3 flex justify-center">
+        <!-- Updated image URL and removed "Fresas frescas" from alt text -->
+        <img src="https://i.postimg.cc/nh0L7yxT/370158c1-fe78-44af-acfd-f689163cee88.jpg" alt="Freszanova" class="rounded-lg w-40 h-40 object-cover shadow-lg">
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <section id="especialidades" class="mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product Card 1: Freszanova pequeño -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+          <!-- Updated image URL for Freszanova pequeño -->
+          <img src="https://i.postimg.cc/d03Yxjq4/IMG-7061.jpg" alt="Freszanova pequeño" class="w-full h-48 object-cover" 
+               onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Imagen+no+disponible';">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Freszanova pequeño</h3>
+            <p class="text-gray-600 text-sm mb-4">El antojo perfecto suave, cremoso y refrescante, con el toque que tu elijas. Toppings clasicos o premium... Pequeño pero lleno de sabor.</p>
+            
+          </div>
+        </div>
+
+        <!-- Product Card 2: Freszanova mediano -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+          <!-- Updated image URL for Freszanova mediano -->
+          <img src="https://i.postimg.cc/XJy0VNB5/IMG-7060.jpg" alt="Freszanova mediano" class="w-full h-48 object-cover"
+               onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Imagen+no+disponible';">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Freszanova mediano</h3>
+            <p class="text-gray-600 text-sm mb-4">El tamaño ideal para darte gusto sin medida. Cremoso, refrescante y listo para personalizar con tus toppings clasicos o premium... Pidelo como te gusta.</p>
+            
+          </div>
+        </div>
+
+        <!-- Product Card 3: Freszanova grande -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+          <!-- Updated image URL for Freszanova grande -->
+          <img src="https://i.postimg.cc/L5tK1yT6/IMG-7058.jpg" alt="Freszanova grande" class="w-full h-48 object-cover"
+               onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Imagen+no+disponible';">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Freszanova grande</h3>
+            <p class="text-gray-600 text-sm mb-4">Mas grande. Disfruta su frescura y personalizalo con tus toppings clasicos o premium favoritos... El antojo se sirve en grande.</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fresas con Crema Section -->
+    <section id="fresas-crema" class="mb-12">
+      <h2 class="text-2xl font-bold mb-6 category-title">Fresas con Crema</h2>
+      <p class="text-gray-600 mb-6"></p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product Card 1 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+          <!-- Updated image URL for Fresas con Crema -->
+          <img src="https://i.postimg.cc/kXyPMpGT/IMG-7054.jpg" alt="Fresas con Crema" class="w-full h-48 object-cover"
+               onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Fresas+con+Crema';">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Fresas con Crema</h3>
+            <p class="text-gray-600 text-sm mb-4">Jugosas, dulces y bañadas en crema irresistible. Sumale un toque unico con queso rayado u oreo... Y llevalas al siguiente nivel.</p>
+            <div>
+              <select class="product-addon border rounded p-1 text-sm" data-product-id="4">
+                
+              </select>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Granizados Section - Updated title to Classic -->
+    <section id="granizados" class="mb-12">
+      <h2 class="text-2xl font-bold mb-6 category-title">Granizados</h2>
+      <p class="text-gray-600 mb-6">Refrescantes y deliciosos</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product Card 1 - Granizado de Café -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="https://i.postimg.cc/s2vkcfcL/IMG-7056.jpg" alt="VICHE VODK - Bebida refrescante" class="w-full h-48 object-cover"
+               onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Imagen+no+disponible';">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Granizado de VICHE VODK</h3>
+            <p class="text-gray-600 text-sm mb-4">VICHE VODK autentico, potente, irresistible. Solo para valientes que se atreven a saborear lo nuestro... Con un TWIST. </p>
+            
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+         <img src="https://i.postimg.cc/QCkwtF8F/IMG-7057.jpg" alt="FRESA VODK - Bebida refrescante" class="w-full h-48 object-cover"
+               onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Imagen+no+disponible';">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Granizado de FRESAS VODK</h3>
+            <p class="text-gray-600 text-sm mb-4">Dulce, atrevido y peligrosamente refrezcante.</p>
+            
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+          <img  src="https://i.postimg.cc/wT2QjXpX/IMG-7052.jpg" alt="SANDIA VODKA - Refrescante" class="w-full h-48 object-cover"
+               onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Imagen+no+disponible';">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Granizado de SANDIA VODK</h3>
+            <p class="text-gray-600 text-sm mb-4">Fresco, audaz, innolvidable. Cuando el verano se sirve en un vaso, se llama SANDIA VODK.</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toppings Section -->
+    <section id="toppings" class="mb-12">
+      <h2 class="text-2xl font-bold mb-6 category-title">Toppings</h2>
+      <p class="text-gray-600 mb-6">Añade un toque especial a tus fresas</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Toppings Card 1 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Toppings Clásicos</h3>
+            <p class="text-gray-600 text-sm mb-4">Almendras, Chips chocolates, Chips blancos, Mani, Oreo, Milo, Maracuya, Sultana</p>
+            
+          </div>
+        </div>
+
+        <!-- Toppings Card 2 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold mb-2">Toppings Premium</h3>
+            <p class="text-gray-600 text-sm mb-4">Durazno, Queso, Brevas, Explosiones, Cerezas, Kiwi, Lychee</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </script>
+</body>
+</html>
